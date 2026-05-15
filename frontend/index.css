@@ -1,0 +1,52 @@
+:root {
+  --primary: #00f2ff;
+  --secondary: #7000ff;
+  --bg-dark: #0a0a0c;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.1);
+  --text-main: #e0e0e0;
+  --text-dim: #a0a0a0;
+  --success: #00ff88;
+  --error: #ff3366;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+body {
+  background: var(--bg-dark);
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(112, 0, 255, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(0, 242, 255, 0.15) 0%, transparent 40%);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 242, 255, 0.5);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}

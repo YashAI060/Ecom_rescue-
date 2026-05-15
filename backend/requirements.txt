@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+faker
+pydantic
+sqlalchemy
+python-multipart
+# google-adk 2.0 (Assuming this is a placeholder for the agent framework)

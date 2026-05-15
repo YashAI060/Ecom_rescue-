@@ -1,0 +1,31 @@
+# Backend
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+backend/database/vera.db
+
+# Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+.vite/
+
+# OS/IDEs
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
